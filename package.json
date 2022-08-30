@@ -1,0 +1,15 @@
+{
+  "name": "fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.7.14",
+    "audic": "^3.0.1",
+    "typescript": "^4.8.2"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "yarn tsc && node src/main.js"
+  }
+}
