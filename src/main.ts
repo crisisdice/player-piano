@@ -17,19 +17,19 @@ async function main() {
     if (key.name === lastpressed) return
 
     lastpressed = key.name
-    timeSinceLastPress = 0
+    loopsSinceLastPress = 0
 
     if (!player.playing) player.play()
   })
 
   // key variables
-  let timeSinceLastPress = 0
+  let loopsSinceLastPress = 0
   let lastpressed: string = ''
 
   // event loop
   setInterval(() => {
-    timeSinceLastPress += 10
-    if (timeSinceLastPress > 50) player.pause()
+    loopsSinceLastPress += 1
+    if (loopsSinceLastPress > 5) player.pause()
   }, 75)
 }
 
